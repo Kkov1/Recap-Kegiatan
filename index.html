@@ -108,6 +108,10 @@ input:focus {
     inset -1px -1px 2px var(--color-white);
 }
 
+.label{
+  font-size: 1.2rem;
+}
+
 button {
   display: block;
   margin: 0 auto;
@@ -142,13 +146,15 @@ input[type="file"] {
             action="https://script.google.com/macros/s/AKfycbyAup-3C1ArMbvMOCA797LfDX9StXTGap8dyMHPLLXZ4GPXRZ9y_EJDpQhewHk1coTYQg/exec"
             method="post" enctype="multipart/form-data">
             <!-- end akses  -->
-            <label for="no">Nomor</label>
+            <label for="no" class="label">Nomor</label>
             <input type="number" id="no" name="no" required>
             </br></br>
 
-            <label for="nama">Nama Kegiatan:</label>
+
+            <label for="nama" class="label">Nama Kegiatan:</label>
             <input type="text" id="nama" name="nama" required>
-            <label for="jenis">Pilih Jenis Kegiatan:</label>
+            <label for="jenis" class="label">Pilih Jenis Kegiatan:</label>
+
             <select name="jenis" id="jenis" required>
                 <option></option>
                 <option value="kbm">KBM </option>
@@ -156,20 +162,24 @@ input[type="file"] {
             </select>
             <br>
             <br>
-            <label for="tgl_kgt">Tanggal kegiatan:</label>
+            <label for="tgl_kgt" class="label">Tanggal kegiatan:</label>
             <input type="date" id="tgl_kgt" name="tgl_kgt" required>
             <br>
-            <label for="uraian">Uraian Kegiatan:</label>
+
+            <label for="uraian" class="label">Uraian Kegiatan:</label>
             </br>
             <textarea cols="60" rows="10" type="text" id="uraian" name="uraian" required></textarea></br>
+
             </br>
             </br>
-            <label for="target">Target Capaian:</label>
+            <label for="target" class="label">Target Capaian:</label>
             <textarea cols="60" rows="10" type="text" id="target" name="target" required></textarea></br></br>
 
-            <label for="buktis">Bukti Kegiatan:</label>
+
+            <label for="buktis" class="label">Bukti Kegiatan:</label>
             <!-- This is an input element of type file, which allows the user to select an image -->
             <input type="file" name="buktis" id="buktis" accept="image/*">
+
             <input type="hidden" id="buktisEnc" name="buktisEnc">
             <!-- This is an image element with an empty src and alt attribute -->
             <script>
